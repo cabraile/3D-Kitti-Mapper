@@ -1,0 +1,19 @@
+# Regulates the downsample resolution (in meters per voxel). 
+voxelgrid_resolution: 0.15  
+
+# Step size for iterating over the kitti frames. Step = 1 means no frame is skipped.
+sequence_step: 1       
+
+# Number of Kitti frames to be loaded (`load_n_frames: 0` loads all)
+load_n_frames: 0
+
+# Whether to colorize LiDAR points using the camera.
+colorize_lidar: True  
+
+# Whether to filter dynamic objects. Can only be applied when `color_reprojection=True`.
+filter_dynamic: True
+
+# Downsamples the map every `downsample_period` frames.
+#   Reducing this argument implies in reduction of memory consumption during the
+#   execution, but will increase the processing time.
+downsample_period: 500
